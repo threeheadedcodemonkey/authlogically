@@ -1,0 +1,31 @@
+en:
+  authlogic_users:
+    flash:
+      must_be_logged_in: "You must be logged in to access this page."
+      must_be_logged_out: "You must be logged out to access this page."
+      dont_have_permissions: "You don't have permissions to see this page."
+
+  flash:
+    users:
+      create:
+        notice: "Your account was created successfully. We've sent you an e-mail with instructions for activating it."
+        error: "Ouch, something went wrong."
+
+      update:
+        notice: "Your account was updated successfully."
+        error: "Oops, something went wrong."
+
+      destroy:
+        notice: "Your account was deleted."
+
+      activate:
+        notice: "Welcome! Your account has now been activated."
+        error: "Invalid activation code."
+
+    user_sessions:
+      create:
+        notice: "Welcome back!"
+        error: "Invalid username or password."
+
+      destroy:
+        notice: "Bye!"

@@ -1,0 +1,23 @@
+#edit
+  %h1.form== Edit account
+  - form_for current_user do |f|
+    = f.label :name, 'name'
+    = f.text_field :name, :class => "text"
+    %br
+    = f.label :login, 'username*'
+    = f.text_field :login, :disabled => :true, :class => "text"
+    %br
+    = f.label :email, 'e-mail'
+    = f.text_field :email, :class => "text"
+    %br
+    = f.label :password, 'password'
+    = f.password_field :password, :class => "text"
+    %br
+    = f.label :password, 'confirm password'
+    = f.password_field :password_confirmation, :class => "text"
+    %br
+    = f.error_messages
+    = f.submit "Update", :disable_with => 'Update...', :class => "submit"
+  
+    %div * username cannot be changed
+  %script $('user_name').focus()

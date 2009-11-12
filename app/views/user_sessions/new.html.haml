@@ -1,0 +1,10 @@
+#login.box
+  - form_for @user_session do |f|
+    = f.label :login, 'username'
+    = f.text_field :login, :class => "text"
+    %br
+    = f.label :password, 'password'
+    = f.password_field :password, :class => "text"
+    %br
+    = f.error_messages
+    = f.submit "Login", :class => "submit"

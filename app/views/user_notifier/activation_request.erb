@@ -1,0 +1,7 @@
+Hello, <%= @user.name %>
+
+in order to activate your account please go to the following address:
+
+<%= user_activation_url(@user.perishable_token) %>
+
+Thank you
